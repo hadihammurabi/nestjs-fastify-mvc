@@ -28,6 +28,7 @@
     "@nestjs/platform-express": "^8.0.0",
     "@nestjs/platform-fastify": "^8.2.5",
     "@nestjs/typeorm": "^8.0.3",
+    "fastify-compress": "^4.0.1",
     "fastify-static": "^4.5.0",
     "hbs": "^4.2.0",
     "pg": "^8.7.1",

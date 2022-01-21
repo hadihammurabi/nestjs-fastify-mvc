@@ -3,6 +3,8 @@ import {
   FastifyAdapter,
   NestFastifyApplication,
 } from '@nestjs/platform-fastify';
+import compression from 'fastify-compress';
+
 import { join } from 'path';
 
 import { AppModule } from './app.module';
@@ -12,6 +14,7 @@ async function bootstrap() {
     AppModule,
     new FastifyAdapter(),
   );
+  app.register(compression);
 
   app.useStaticAssets({
     root: join(__dirname, '..', 'public'),
