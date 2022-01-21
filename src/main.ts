@@ -21,9 +21,10 @@ async function bootstrap() {
     prefix: '/public/',
   });
 
+
   app.setViewEngine({
     engine: {
-      handlebars: require('hbs'),
+      nunjucks: require('nunjucks'),
     },
     templates: join(__dirname, '..', 'views'),
   });
